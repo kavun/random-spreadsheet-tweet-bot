@@ -4,7 +4,7 @@ const random = require('random');
 const config = require('./config');
 const bot = require('./bot');
 
-function tweetRandom(data, tabletop) {
+function tweetRandom(data, tabletop, callback = () => {}) {
     if (data == null || data.length < 1) {
         console.log('spreadsheet empty');
         return;
@@ -23,13 +23,15 @@ function tweetRandom(data, tabletop) {
 
     console.log(`Random at idx:${randomInt} is "${value}"`);
 
-    bot.tweet(value);
+    bot.tweet(value, callback);
 }
 
-function init() {
+function init(callback = () => {}) {
     Tabletop.init({
         key: config.googleSheetUrl,
-        callback: tweetRandom,
+        callback: (data, tabletop) => {
+            tweetRandom(data, tabletop, callback);
+        },
         simpleSheet: true
     });
 }
