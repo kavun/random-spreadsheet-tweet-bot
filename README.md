@@ -3,6 +3,8 @@
 - `./index.js` will pull a random cell value from a public Google Spreadsheet with `tabletop` and tweet it with `twit`
 - `./now.js` exposes a `/tweet` route via express to do the same
 
+This is running right now randomly tweeting my band's lyrics once a day: https://mobile.twitter.com/Forester_TN
+
 ## configure
 
 ### .env
