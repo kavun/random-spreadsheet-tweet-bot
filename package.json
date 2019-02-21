@@ -1,7 +1,7 @@
 {
   "name": "random-spreadsheet-tweet-bot",
   "version": "1.0.0",
-  "description": "Tweets random cells from a Google spreadsheet scheduled on an interval",
+  "description": "Tweets random cells from a Google spreadsheet",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

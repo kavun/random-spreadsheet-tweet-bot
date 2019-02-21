@@ -8,6 +8,5 @@ module.exports = {
   	access_token: process.env.ACCESS_TOKEN,
   	access_token_secret: process.env.ACCESS_TOKEN_SECRET,
   	googleSheetUrl: process.env.GOOGLE_SHEET_URL,
-  	headerName: process.env.GOOGLE_SHEET_HEADER,
-  	intervalMs: parseInt(process.env.INTERVAL_MS) || (1000 * 60 * 60 * 24)
+  	headerName: process.env.GOOGLE_SHEET_HEADER
 };
