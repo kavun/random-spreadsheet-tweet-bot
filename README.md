@@ -45,10 +45,10 @@ You can deploy `now.js` to now but you have to create a now.json file, and add y
             { "src": "/(.*)", "dest": "now.js" }
         ],
         "env": {
-            "CONSUMER_KEY": "@ftb-consumer-key",
-            "CONSUMER_SECRET": "@ftb-consumer-secret",
-            "ACCESS_TOKEN": "@ftb-access-token",
-            "ACCESS_TOKEN_SECRET": "@ftb-access-token-secret",
+            "CONSUMER_KEY": "@secret-consumer-key",
+            "CONSUMER_SECRET": "@secret-consumer-secret",
+            "ACCESS_TOKEN": "@secret-access-token",
+            "ACCESS_TOKEN_SECRET": "@secret-access-token-secret",
             "GOOGLE_SHEET_URL": "https://docs.google.com/spreadsheets/d/xxxxxxxxxxxxxxx/edit?usp=sharing",
             "GOOGLE_SHEET_HEADER": "header"
         }
