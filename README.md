@@ -2,6 +2,10 @@
 
 This will start a `setInterval` based on your `INTERVAL_MS` in the `.env` file and pull a random cell value from a public Google Spreadsheet and tweet it.
 
+## run
+
+	npm start
+
 ## .env
 
 	CONSUMER_KEY=pTlxxxxxxxxxxxxxxxuoY
