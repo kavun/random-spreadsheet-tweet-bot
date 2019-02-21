@@ -1,4 +1,4 @@
-# Random Spreadsheet Tweeter
+# Random Spreadsheet Tweet Bot
 
 - `./index.js` will pull a random cell value from a public Google Spreadsheet and tweet it
 - `./now.js` exposes a `/tweet` route via express to do the same
