@@ -1,6 +1,6 @@
 # Random Spreadsheet Tweet Bot
 
-- `./index.js` will pull a random cell value from a public Google Spreadsheet and tweet it
+- `./index.js` will pull a random cell value from a public Google Spreadsheet with `tabletop` and tweet it with `twit`
 - `./now.js` exposes a `/tweet` route via express to do the same
 
 ## configure
@@ -29,11 +29,11 @@ the content of your first cell (header cell)
 ## deploy
 
 - deploy to now (https://zeit.co/)
-- hit the /tweet route on a schedule (I use https://cron-job.org)
+- hit the `/tweet` route on a schedule (I use https://cron-job.org)
 
 ### now.json
 
-You can deploy `now.js` to now but you have to create a now.json file, and add your now secrets
+You can deploy `./now.js` to now but you have to create a `./now.json` file, and add your now secrets
 
     {
         "name": "MyTweetBot",
