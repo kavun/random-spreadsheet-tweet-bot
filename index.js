@@ -1,4 +1,6 @@
-const tweetRandom = require('./tweetRandom');
+const sheetHelper = require('./sheetHelper');
 const config = require('./config');
 
-tweetRandom();
+sheetHelper.init((rows, tabletop) => {
+	sheetHelper.tweetRandom();
+});
